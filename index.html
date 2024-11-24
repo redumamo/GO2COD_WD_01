@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+              
+<body>
+ <img src="Gold_Luxury_Initial_Circle_Logo__4_-removebg-preview.png"class="logo">
+    <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+  <div class="app-container">
+    <script>
+              let ham = document.querySelector(".navbar");
+              ham = document.addEventListener("click",() =>{
+                document.querySelector(".navbar").classList.toggle("active");
+              })
+            </script>
+    <!-- Header -->
+    <header>
+      <h1>To-Do LIST</h1>
+      <p id="date"></p> <!-- Dynamic Date -->
+    </header>
+
+    <!-- Error Message -->
+    <div id="error-message"></div>
+
+    <!-- Task Form -->
+    <div class="task-form">
+      <input type="text" id="task-input" placeholder="Insert a task" />
+      <button id="add-task-btn">Add Task</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="task-list"></ul>
+  </div>
+    <!-- Footer -->
+ <footer>
+     <p>© 2024 Rediet Mamo To-Do List. All rights reserved.</p>
+    </footer>
+  <script src="script.js"></script>
+</body>
+</html>
